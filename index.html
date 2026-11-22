@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umit Marandi | Manufacturing Automation & Industrial Systems Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">Umit Marandi</a>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Technical Stack</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">M.Tech — Manufacturing Automation Engineering, IIT Bombay</p>
+        <h1>Building data-driven production systems, CNC telemetry pipelines, and industrial digital twins.</h1>
+        <p class="subtitle">
+          Industrial &amp; Production Engineer bridging shop-floor hardware, CAD/CAE modeling, discrete-event simulation, and real-time condition monitoring to eliminate bottlenecks and scrap.
+        </p>
+        <div class="hero-actions">
+          <a href="resume.pdf" target="_blank" class="btn btn-primary">Download Resume (PDF)</a>
+          <a href="#projects" class="btn btn-secondary">View Engineering Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Engineering Projects</h2>
+        <div class="project-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/cnc-monitor.png" alt="FANUC CNC Condition Monitoring Dashboard" onerror="this.parentElement.classList.add('placeholder'); this.style.display='none';" />
+              <span class="placeholder-label">assets/cnc-monitor.png</span>
+            </div>
+            <div class="project-body">
+              <span class="tag">Cyber-Physical Systems &amp; IIoT</span>
+              <h3>Edge-Based FANUC CNC Condition Monitoring &amp; Dispatch</h3>
+              <ul class="project-details">
+                <li><strong>Problem:</strong> Unplanned spindle/feed anomalies and manual maintenance logging on shop-floor CNC machines.</li>
+                <li><strong>Approach:</strong> Built an Ethernet edge daemon interfacing directly with FANUC controllers via the FOCAS API (<code>fwlib32.dll</code>) to stream live telemetry into a rule-based alert engine and automated work-order logger.</li>
+                <li><strong>Outcome:</strong> Real-time multi-tier fault visibility with automated maintenance dispatch logging.</li>
+              </ul>
+              <div class="tech-pills">
+                <span>FANUC FOCAS</span>
+                <span>Python (ctypes, pandas)</span>
+                <span>FastAPI / Streamlit</span>
+                <span>WebSockets</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/sheet-feeder.gif" alt="Adaptive Sheet-Metal Feeding System CAD" onerror="this.parentElement.classList.add('placeholder'); this.style.display='none';" />
+              <span class="placeholder-label">assets/sheet-feeder.gif</span>
+            </div>
+            <div class="project-body">
+              <span class="tag">CAD, Kinematics &amp; Optimization</span>
+              <h3>Adaptive Sheet-Metal Feeding System for Scrap Reduction</h3>
+              <ul class="project-details">
+                <li><strong>Problem:</strong> Fixed-pitch sheet feeding generates high strip-skeleton scrap and alignment variance in stamping lines.</li>
+                <li><strong>Approach:</strong> Designed a 3D mechanical assembly and kinematic motion study paired with an analytical nesting and feed-pitch optimization model.</li>
+                <li><strong>Outcome:</strong> Minimized material offcut waste while maintaining cycle-time synchronization.</li>
+              </ul>
+              <div class="tech-pills">
+                <span>SolidWorks CAD</span>
+                <span>Motion Study</span>
+                <span>Analytical Optimization</span>
+                <span>DFM</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/digital-twin.png" alt="Assembly Line Digital Twin Simulation" onerror="this.parentElement.classList.add('placeholder'); this.style.display='none';" />
+              <span class="placeholder-label">assets/digital-twin.png</span>
+            </div>
+            <div class="project-body">
+              <span class="tag">Digital Twin &amp; Line Balancing</span>
+              <h3>Production &amp; Assembly Line Digital Twin</h3>
+              <ul class="project-details">
+                <li><strong>Problem:</strong> Throughput losses and WIP buildup across stochastic multi-station assembly lines.</li>
+                <li><strong>Approach:</strong> Formulated assembly precedence balancing (RPW/LCR) and built stochastic discrete-event &amp; Monte Carlo simulation models to test buffer sizing and workstation allocation.</li>
+                <li><strong>Outcome:</strong> Identified bottleneck stations and improved line efficiency under variable cycle times.</li>
+              </ul>
+              <div class="tech-pills">
+                <span>AnyLogic</span>
+                <span>Discrete-Event Simulation</span>
+                <span>Monte Carlo</span>
+                <span>Line Balancing</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/fem-analysis.png" alt="ANSYS Finite Element Contour Plot" onerror="this.parentElement.classList.add('placeholder'); this.style.display='none';" />
+              <span class="placeholder-label">assets/fem-analysis.png</span>
+            </div>
+            <div class="project-body">
+              <span class="tag">CAE, FEM &amp; Quality Engineering</span>
+              <h3>Structural/Thermal FEM &amp; Statistical Process Control</h3>
+              <ul class="project-details">
+                <li><strong>Problem:</strong> Predicting thermo-mechanical deformation in forming/machining and controlling process drift.</li>
+                <li><strong>Approach:</strong> Executed coupled thermal-structural and contact finite element analyses in ANSYS APDL/Mechanical alongside SPC capability studies (<em>C<sub>p</sub>, C<sub>pk</sub></em>) and Taguchi DoE.</li>
+                <li><strong>Outcome:</strong> Validated stress/temperature limits and established robust process parameter windows.</li>
+              </ul>
+              <div class="tech-pills">
+                <span>ANSYS Mechanical &amp; APDL</span>
+                <span>SPC &amp; DoE</span>
+                <span>Reliability Engineering</span>
+                <span>SciPy</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Stack Section -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Technical Stack</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Automation &amp; Industrial Telemetry</h3>
+            <p>FANUC FOCAS API, Python (<code>ctypes</code>, <code>pandas</code>, <code>numpy</code>, <code>scipy</code>), FastAPI, Streamlit, Dash, Plotly, SQL/CSV Edge Logging</p>
+          </div>
+          <div class="skill-group">
+            <h3>CAD, CAE &amp; Simulation</h3>
+            <p>SolidWorks (3D Assembly &amp; Motion Studies), ANSYS Mechanical &amp; APDL, AnyLogic (Discrete-Event &amp; Monte Carlo Simulation)</p>
+          </div>
+          <div class="skill-group">
+            <h3>Industrial &amp; Quality Engineering</h3>
+            <p>Assembly Line Balancing, Statistical Process Control (SPC), Design of Experiments (DoE), Reliability Modeling, Linear Programming</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="edu-list">
+          <div class="edu-item">
+            <div>
+              <h3>M.Tech in Manufacturing Automation Engineering</h3>
+              <p class="edu-org">Indian Institute of Technology (IIT) Bombay — Department of Mechanical Engineering</p>
+            </div>
+            <span class="edu-date">2026 – Present</span>
+          </div>
+          <div class="edu-item">
+            <div>
+              <h3>B.Tech in Industrial and Production Engineering</h3>
+              <p class="edu-org">Undergraduate Engineering Degree</p>
+            </div>
+            <span class="edu-date">Completed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-box">
+        <h2 class="section-title">Contact</h2>
+        <p>Open to roles and research collaborations in Manufacturing Automation, Digital Twins, Industrial Systems, and Smart Factory Engineering.</p>
+        <div class="contact-links">
+          <a href="mailto:umithrx267@gmail.com" class="btn btn-primary">umithrx267@gmail.com</a>
+          <a href="https://github.com/yourusername" target="_blank" class="btn btn-secondary">GitHub</a>
+          <a href="https://www.linkedin.com/in/umitmarandi?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="btn btn-secondary">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Umit Marandi. Built with clean HTML &amp; CSS.</p>
+    </div>
+  </footer>
+</body>
+</html>
